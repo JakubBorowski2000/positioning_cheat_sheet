@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Positioning</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="mainDiv">
+            <h1>CSS Layout - The position Property</h1>
+            <h2>There are five position values in css:</h2>
+            <table id="propertyList">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>static</td>
+                        <td>HTML elements are static by default. Not affected by top, bottom, left, right properties. Always positioned according to normal flow. CSS: <b>position: static;</b></td>
+                    </tr>
+                    <tr>
+                        <td>relative</td>
+                        <td>An element with the relative position will be positioned "relative" to its normal (static) position. Top, right etc. properties will move it from its normal position. Other elements will not be adjusted to fill that gap. CSS: <b>position: relative;</b></td>
+                    </tr>
+                    <tr>
+                        <td>fixed</td>
+                        <td>An element with the fixed position is positioned relative to the viewport. It will always stay in the same position even if the webpage is scrolled. This is useful for elements like nav bars. CSS: <b>position: fixed;</b></td>
+                    </tr>
+                    <tr>
+                        <td>absolute</td>
+                        <td>An element with the absolute position is positioned relative to the HTML element it is inside of. If it is not inside any HTML elemnt it will be positioned relative to documnet body and will move along with page scrolling. CSS: <b>position: absolute;</b></td>
+                    </tr>
+                    <tr>
+                        <td>sticky</td>
+                        <td>An element with the sticky position is positioned based on users scroll position. It is relative until a given offset position in the webpage then it sticks in place. This does not work in Internet explorer and needs a special -webkit- prefix to work in safari. CSS: <b>position: sticky;</b></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Learn more at: <a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">w3schools</a></p>
+            <br><br>
+            <div class="allPositionDiv">
+                <div class="static">
+                    <p>This &lt;div&gt; element has the <b>static</b> position. It acts like every HTML element when you first create it.</p>
+                </div>
+                <br><br>
+                <div id="moveDiv" class="relative">
+                    <p>This &lt;div&gt; element has the <b>relative</b> position. Currently nothing has changed, <b>hold mouse button down</b> on this div to change its relative position by 50px down. CSS: <b>top: 50px;</b></p>
+                </div>
+                <br><br>
+                <div id="absoluteParent" class="relative">
+                    <p>This &lt;div&gt; element has the <b>relative</b> position.</p>
+                    <div id="absoluteDiv" class="absolute">
+                        <p>This &lt;div&gt; element has the <b>absolute</b> position. It is positioned relative to it's parent div (the div it is inside of). CSS: <b>top: 50px; left: 50px;</b></p>
+                    </div>                   
+                </div>
+                <br><br>
+                <div class="sticky">
+                    <p>This &lt;div&gt; element has the <b>sticky</b> position. Scroll below it to see it stick to the screen. CSS: <b>top: 50%;</b> It will stick when it gets to half(50%) of the screen.</p>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="fixed">
+                    <p>This &lt;div&gt; element has the <b>fixed</b> position. It won't move from the top of the screen.</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

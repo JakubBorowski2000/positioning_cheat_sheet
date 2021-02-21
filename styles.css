@@ -1,0 +1,66 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mainDiv{
+    position: absolute;
+    top: 50px;
+}
+/* Styles for table from: https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy*/
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 10px;
+}
+#propertyList th, #propertyList td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#propertyList tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#propertyList th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* ///////////// DIV POSITION PROPERTIES /////////////*/
+.allPositionDiv > div, .allPositionDiv > div > div{
+    border: 5px solid #7f8c8d;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+div.static{
+    position: static;
+}
+div.relative{
+    position: relative;
+}
+#moveDiv:active {
+    top: 50px;
+}
+div.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+div.absolute{
+    position: absolute;
+}
+#absoluteParent{
+    height: 250px;
+}
+#absoluteDiv{
+    top: 50px;
+    left: 50px;
+    width: 200px;
+}
+div.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50%;
+}
